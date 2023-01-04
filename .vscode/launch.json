@@ -1,0 +1,47 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                // "--data_name", "CIFAR10",
+                // "--model_name", "wresnet28x2",
+                "--data_name", "BDD100K",
+                "--model_name", "mb2-ssd-lite",
+                "--control_name", "1280_fix@0.95-mix_5_0.4_iid_5_0.5_0",
+                // "--resume_mode", "1"
+            ]
+        }
+    ]
+}
+
+
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "Python: Current File",
+//             "type": "python",
+//             "request": "launch",
+//             "program": "${file}",
+//             "console": "integratedTerminal",
+//             "justMyCode": true,
+//             "args": [
+//                 "--datasets", "../bdd100k/images/100k/train/",
+//                 "--validation_dataset", "../bdd100k/images/100k/val/",
+//                 "--net", "mb2-ssd-lite",
+//                 "--batch_size", "48",
+//                 "--num_epochs", "1",
+//                 // "--num_epochs", "200",
+//                 "--scheduler", "cosine",
+//                 "--lr", "0.01",
+//                 "--t_max", "200"
+//             ]
+//         }
+//     ]
+// }
